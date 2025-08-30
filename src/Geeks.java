@@ -20,4 +20,3 @@ class Geeks
         System.out.println("Default value for Integer is: " + name.I);
     }
 }
-

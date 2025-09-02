@@ -6,10 +6,10 @@ public class SampleScanner
    {
        Scanner number = new Scanner(System.in);
 
-       System.out.println("Enter a number: ");
+       System.out.println("Enter first number: ");
        int num1 = number.nextInt();
 
-       System.out.println("Enter a number: ");
+       System.out.println("Enter second number: ");
        int num2 = number.nextInt();
 
        int Ans = num1 + num2;

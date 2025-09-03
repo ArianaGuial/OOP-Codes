@@ -26,14 +26,11 @@ public class Exercise1
             total  += prices[i];
 
             items++;
-
-//            System.out.println("Items purchased: " + items);
         }
 
         System.out.println("____________________" );
         System.out.println("RECEIPT");
         System.out.println("Customer Name: " + customerName + "\n");
-//        System.out.println("\n");
 
         for(int i = 0; i < 3; i++)
         {

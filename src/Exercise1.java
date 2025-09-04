@@ -6,7 +6,7 @@ public class Exercise1
     {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("_______________________" );
+        System.out.println("_______________________");
         System.out.println("OOP SARI-SARI STORE");
 
         System.out.println("\nEnter customer name: ");
@@ -20,15 +20,16 @@ public class Exercise1
 
         for(int i = 0; i < 3; i++)
         {
-            System.out.println("Item " + (i + 1) + ": ");
+            System.out.println("Item " + (i + 1) + " Price: ");
             prices[i] = sc.nextDouble();
 
-            total  += prices[i];
-
+            total += prices[i];
             items++;
+
+            System.out.println("Items processed: " + items + "/3\n");
         }
 
-        System.out.println("____________________" );
+        System.out.println("____________________");
         System.out.println("RECEIPT");
         System.out.println("Customer Name: " + customerName + "\n");
 
@@ -38,16 +39,7 @@ public class Exercise1
         }
 
         System.out.println("\nTotal: Php " + total);
-        System.out.println("____________________" );
-
-        System.out.println("\nClearing items from stock... ");
-
-        while(items > 0)
-        {
-            items--;
-        }
-
-        System.out.println("Purchased items cleared from stock");
+        System.out.println("____________________");
 
         sc.close();
     }

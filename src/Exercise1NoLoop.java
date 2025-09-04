@@ -35,10 +35,6 @@ public class Exercise1NoLoop
         System.out.println("RECEIPT");
         System.out.println("\nCustomer Name: " + customerName);
 
-//        System.out.println("Item 1: Php " + price1);
-//        System.out.println("Item 2: Php " + price2);
-//        System.out.println("Item 3: Php " + price3);
-
         System.out.print("Total items processed: 3/3");
 
         System.out.println("\nTotal: Php " + total);

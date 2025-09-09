@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise1
+public class EXERCISE1
 {
     public static void main(String[] args)
     {
@@ -12,31 +12,30 @@ public class Exercise1
         System.out.println("\nEnter customer name: ");
         String customerName = sc.nextLine();
 
-        double[] prices = new double[3];
+        double price1, price2, price3;
         double total = 0;
-        int items = 0;
 
         System.out.println("\nEnter prices for 3 items: ");
 
-        for(int i = 0; i < 3; i++)
-        {
-            System.out.println("Item " + (i + 1) + " Price: ");
-            prices[i] = sc.nextDouble();
+        System.out.println("Item 1 Price: ");
+        price1 = sc.nextDouble();
+        System.out.println("Items processed: 1/3\n");
 
-            total += prices[i];
-            items++;
+        System.out.println("Item 2 Price: ");
+        price2 = sc.nextDouble();
+        System.out.println("Items processed: 2/3\n");
 
-            System.out.println("Items processed: " + items + "/3\n");
-        }
+        System.out.println("Item 3 Price: ");
+        price3 = sc.nextDouble();
+        System.out.println("Items processed: 3/3\n");
+
+        total = price1 + price2 + price3;
 
         System.out.println("____________________");
         System.out.println("RECEIPT");
-        System.out.println("Customer Name: " + customerName + "\n");
+        System.out.println("\nCustomer Name: " + customerName);
 
-        for(int i = 0; i < 3; i++)
-        {
-            System.out.println("Item " + (i + 1) + ": Php " + prices[i]);
-        }
+        System.out.print("Items processed: 3/3");
 
         System.out.println("\nTotal: Php " + total);
         System.out.println("____________________");
